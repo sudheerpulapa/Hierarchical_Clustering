@@ -44,8 +44,6 @@ Run the following command:
 ```python
 python divisive.py
 
-## Agglomerative Clustering
-
 ### Equations used
 - Maximum or complete-linkage clustering: Max(d(a,b))
 - Minimum or single-linkage clustering: Min(d(a,b))
