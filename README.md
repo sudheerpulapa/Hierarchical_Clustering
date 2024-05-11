@@ -44,8 +44,6 @@ Run the following command:
 ```python
 python divisive.py
 
-
-
 ## Equations used
 ```
 Maximum or complete-linkage clustering -> Max(d(a,b))
@@ -67,7 +65,7 @@ The entire data was mapped to integers to reduce the storage and computational r
 CLustering was performed using the agglomerative and divisive methods and the following dendrograms were obtained-
 
 ### Agglomerative
-![Agglomerative-Centroid](Results/Centroid.png "Centroid")
+![Agglomerative-Centroid](https://github.com/sudheerpulapa/Hierarchical_Clustering/blob/main/Results/Centroid.png "Centroid")
 ![Agglomerative-Max](Results/Max.png "Max")
 ![Agglomerative-Min](Results/Min.png "Min")
 
