@@ -1,18 +1,13 @@
 # Agglomerative and Divisive Hierarchical Clustering
 
-Course Assignment for CS F415- Data Mining @ BITS Pilani, Hyderabad Campus.
-
-**Done under the guidance of Dr. Aruna Malapati, Assistant Professor, BITS Pilani, Hyderabad Campus.**
-
 ## Table of contents
 - [Introduction](#introduction)
 - [Data](#data)
 - [Instructions to run the scripts](#instructions-to-run-the-scripts)
-      - [Divisive clustering](#divisive-clustering)
-      - [Agglomerative clustering](#agglomerative-clustering)
+  - [Divisive clustering](#divisive-clustering)
+  - [Agglomerative clustering](#agglomerative-clustering)
 - [Equations used](#equations-used)
 - [Pre-processing done](#pre-processing-done)
-- [Machine specs](#machine-specs)
 - [Results](#results)
   * [Agglomerative](#agglomerative)
   * [Divisive](#divisive)
@@ -20,6 +15,7 @@ Course Assignment for CS F415- Data Mining @ BITS Pilani, Hyderabad Campus.
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
+---
 
 ## Introduction
 Hierarchical clustering is a method of cluster analysis which seeks to build a hierarchy of clusters. Strategies for hierarchical clustering generally fall into two types:
@@ -30,13 +26,16 @@ Hierarchical clustering is a method of cluster analysis which seeks to build a h
 
 In general, the merges and splits are determined in a greedy manner. The results of hierarchical clustering are usually presented in a dendrogram.
 
-
 **The main purpose of this project is to get an in depth understanding of how the Divisive and Agglomerative hierarchical clustering algorithms work.**
 
 *More on [Hierarchical clustering](https://en.wikipedia.org/wiki/Hierarchical_clustering)*
 
+---
+
 ## Data
 We used the **Human Gene DNA Sequence** dataset, which can be found [here](http://genome.crg.es/datasets/ggalhsapgenes2005/hg16.311.putative.cds.fa). The dataset contains **311 gene sequences**. The data can be found in the folder **'data'**.
+
+---
 
 ## Instructions to run the scripts
 Run the following command:
@@ -44,12 +43,7 @@ Run the following command:
 ##### Divisive clustering
 ```python
 python divisive.py
-```
 
-##### Agglomerative clustering
-```python
-python agglomerative.py
-```
 
 
 ## Equations used
@@ -68,13 +62,6 @@ A mapping was created from the unique gene sequences in the dataset to integers 
 
 The entire data was mapped to integers to reduce the storage and computational requirement.
 
-## Machine specs
-Processor: i7-7500U
-
-Ram: 16 GB DDR4
-
-OS: Ubuntu 16.04 LTS
-
 ## Results
 
 CLustering was performed using the agglomerative and divisive methods and the following dendrograms were obtained-
@@ -90,9 +77,6 @@ CLustering was performed using the agglomerative and divisive methods and the fo
 
 
 
-## Group Members
-[Shubham Jha](http://github.com/shubhamjha97)
+## Contributor: 
+[Sudheer Chowdary Pulapa](https://github.com/sudheerpulapa)
 
-[Praneet Mehta](http://github.com/praneetmehta)
-
-[Abhinav Jain](http://github.com/abhinav1112)
