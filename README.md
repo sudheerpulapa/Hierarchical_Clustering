@@ -44,37 +44,33 @@ Run the following command:
 ```python
 python divisive.py
 
-## Equations used
-```
-Maximum or complete-linkage clustering -> Max(d(a,b))
-Minimum or single-linkage clustering -> Min(d(a,b))
-Mean or average linkage clustering -> sum of all d(a,b)/(|A|+|B|)
-Diameter of a cluster -> Max(d(x,y))
-```
-*where x, y are points in the same cluster and, a belongs to A, b belongs to B.*
+## Agglomerative Clustering
 
-## Pre-processing done
+### Equations used
+- Maximum or complete-linkage clustering: Max(d(a,b))
+- Minimum or single-linkage clustering: Min(d(a,b))
+- Mean or average linkage clustering: sum of all d(a,b)/(|A|+|B|)
+- Diameter of a cluster: Max(d(x,y)), where x, y are points in the same cluster and, a belongs to A, b belongs to B.
+
+### Pre-processing done
 The file was read sequence by sequence and was saved in the form of a dictionary, where the key is the gene sequence's name and the value contains the entire gene string.
 
 A mapping was created from the unique gene sequences in the dataset to integers so that each sequence corresponded to a unique integer.
 
 The entire data was mapped to integers to reduce the storage and computational requirement.
 
-## Results
+### Results
+Clustering was performed using the agglomerative method and the following dendrograms were obtained:
 
-CLustering was performed using the agglomerative and divisive methods and the following dendrograms were obtained-
+- **Centroid**
+![Agglomerative-Centroid](https://github.com/sudheerpulapa/Hierarchical_Clustering/blob/main/Results/Centroid.png)
 
-### Agglomerative
-![Agglomerative-Centroid](https://github.com/sudheerpulapa/Hierarchical_Clustering/blob/main/Results/Centroid.png "Centroid")
-![Agglomerative-Max](Results/Max.png "Max")
-![Agglomerative-Min](Results/Min.png "Min")
+- **Max**
+![Agglomerative-Max](https://github.com/sudheerpulapa/Hierarchical_Clustering/blob/main/Results/Max.png)
 
+- **Min**
+![Agglomerative-Min](https://github.com/sudheerpulapa/Hierarchical_Clustering/blob/main/Results/Min.png)
 
-### Divisive
-![Divisive](Results/dendrogram_divisive.png "Divisive")
+---
 
-
-
-## Contributor: 
-[Sudheer Chowdary Pulapa](https://github.com/sudheerpulapa)
-
+**Contributor**: Sudheer Chowdary Pulapa
